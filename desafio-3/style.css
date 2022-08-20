@@ -1,0 +1,73 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: darkkhaki;
+
+}
+#botao {
+  height: 3rem;
+  width: 6rem;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: brilho 3s infinite;
+  transition: 0.5s;
+  cursor: pointer;
+}
+span {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(27deg, rgb(117, 38, 38), rgb(255, 255, 255), rgb(117, 38, 38));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: texto 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+span:hover {
+  transition: 0.3s;
+  opacity: 1;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#botao:hover {
+  border-radius: 5px;
+  background-color: rgb(79, 65, 60);
+  transition: 0.5s;
+  font-size: 2rem;
+}
+@keyframes texto {
+  0% {
+    background-position:-500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@keyframes brilho {
+  0% {
+    box-shadow: 5px 5px 20px rgb(0, 0, 0), -5px -5px 20px rgb(111, 111, 111);
+  }
+
+  50% {
+    box-shadow: 5px 5px 20px rgb(0, 0, 0), -5px -5px 20px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 5px 5px 20px rgb(190, 190, 190), -5px -5px 20px rgb(0, 0, 0);
+  }
+}
