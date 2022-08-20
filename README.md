@@ -6,3 +6,6 @@ Repositório destinado à listagem dos projetos desenvolvidos nesses 21 dias de 
 Consiste em um desafio da Rocketseat: codar por 21 dias seguidos durante pelo menos 1 hora diária.
 
 - [x] *Criação do repositório*
+- [x] *Desafio 2 - Hello World*
+- [x] *Desafio 3 - Botão animado*
+- [x] *Desafio 4 - Calculadora*
